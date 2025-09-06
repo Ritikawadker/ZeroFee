@@ -1,0 +1,27 @@
+# Set the default behavior for all files
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+# Denote all files that are truly binary and should not be modified
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.exe binary
+
+# Exclude node_modules from line ending conversion
+node_modules/ -text
+backend/node_modules/ -text
